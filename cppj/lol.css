@@ -1,0 +1,169 @@
+*{
+margin:0;
+padding:0;
+}
+
+/*makes the background color pink*/
+
+body {
+  background-color: #FFB6C1;
+}
+
+/*used to line up my items in tables*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*First settings for fonts*/
+h1{
+  font-size:40px;
+  color: darkmagenta;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 50px;
+}
+
+/*Second settings for fonts*/
+h2{
+  font-size:25px;
+  color: palevioletred;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 50px;
+}
+
+/*Third settings for fonts*/
+h3{
+  font-size:25px;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 50px;
+}
+
+/*Fourth settings for fonts*/
+h4{
+  font-size:25px;
+  color: teal;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 50px;
+}
+
+/*used to line up my items in tables*/
+.column {
+  float: right;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*adds a black header*/
+header{
+height:60px;
+background:#262626;
+padding:0 50px;
+}
+
+/*used for the text in the top left*/
+.logo{
+width:30%;
+float:left;
+color:#fff;
+font-weight:bold;
+text-transform:uppercase;
+line-height:60px;
+font-size:35px;
+font-family:sans-serif;
+}
+
+/*used for the buttons on the top right*/
+nav{
+width:68%;
+float:right;
+}
+
+nav ul{
+list-style:none;
+float:right;
+}
+
+nav ul li{
+display:inline-block;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#fff;
+font-family:sans-serif;
+font-weight:bold;
+margin: 0 10px;
+line-height:60px;
+text-transform:uppercase;
+}
+
+/*Settings for banner*/
+.banner{
+height:100%;
+}
+
+.banner img{
+width:100%;
+}
+
+/*Settings for text*/
+.content{
+padding:5%;
+}
+
+.content p{
+font-size:18px;
+line-height:1.7;
+font-family:sans-serif;
+margin-bottom:1%;
+}
+
+/*adds a footer at the bottom*/
+footer{
+background:#000;
+color:#fff;
+padding:15px 50px;
+text-align:center;
+}
+    
+    
+/*used to make the website look good on screens with less than 600px*/
+
+    @media (max-width: 600px){        
+
+header {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+.logo {
+  width: 100%;
+  float: none;
+}
+nav {
+  width: 100%;
+  float: none;
+}
+nav ul li {
+  display: block;
+}
+nav ul {
+  float: none;
+}
